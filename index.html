@@ -1,0 +1,56 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>VOTE MAARTEN</title>
+  <meta name="description" content="seriously, vote Maarten">
+  <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+</head>
+
+<body>
+  <div class="center">WELCOME TO MY WEBSITE</div>
+  <!--<img class="center" src="https://assets.wordpress.envato-static.com/uploads/2017/04/My-website-is-terrible.gif"> </img>
+  <img class="center" src="https://media3.giphy.com/media/nDIsbJP2klhYXKLaTX/giphy.gif?cid=790b76111f59ad248d336cd540ef59d4bf72bcab19dac8ea&rid=giphy.gif"> </img>
+-->
+<!-- Add these scripts to  the bottom of the page -->
+<script src="https://unpkg.com/jquery@3.2.1"></script>
+<script src="https://unpkg.com/clippyjs@latest"></script>
+<script type="text/javascript">
+function showThing(){
+  agent.speak("Please vote voor Maarten!!");
+  setTimeout(showThing, 3000);
+}
+clippy.load('Clippy', function(agent){
+  // Do anything with the loaded agent
+  agent.show();
+  window.clippy = agent;
+  showThing()
+});
+function showThing(){
+  window.clippy.speak("Please vote voor Maarten!!");
+  setTimeout(showThing, 3000);
+}
+</script>
+
+</body>
+
+<style>
+.center{
+  text-align:center;
+  width:100%;
+}
+body{
+  background:linear-gradient(#333, #000);
+  height:100vh;
+  margin:0;
+  color:#fff;
+  font-size:2em;
+}
+*{
+  font-family:"Comic Sans MS", sans-serif;
+  
+}
+</style>
+
+</html>
